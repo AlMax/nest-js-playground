@@ -1,0 +1,17 @@
+GET http://localhost:3000
+
+### All songs
+GET http://localhost:3000/songs
+
+### One
+GET http://localhost:3000/songs/1
+
+### Create
+POST http://localhost:3000/songs
+Content-Type: application/json
+
+{
+    "title": "Test1",
+    "artists": ["ali", "anna", "rihan"],
+    "releaseDate": "2024-07-24"
+}
